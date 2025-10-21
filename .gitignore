@@ -1,0 +1,39 @@
+# Ignore build output directories (ESP-IDF)
+build/
+**/build/
+
+# VSCode & Espressif extension files
+.vscode/
+.settings/
+*.code-workspace
+
+# Python virtual environments
+venv/
+.env/
+*.pyc
+__pycache__/
+
+# CMake and ninja temporary files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.ninja
+*.cmake
+
+# IDF-related generated files
+sdkconfig
+sdkconfig.old
+project_description.json
+
+# Logs & temporary outputs
+*.log
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak

@@ -284,10 +284,20 @@ void demonstrate_problems(void)
 ## คำถามสำหรับวิเคราะห์
 
 1. Time slice ขนาดไหนให้ประสิทธิภาพดีที่สุด? เพราะอะไร?
+__ตอบ__ ประมาณ 50–100 ms เพราะดูมีความสมดุล
+
 2. ปัญหาอะไรที่เกิดขึ้นเมื่อ time slice สั้นเกินไป?
+__ตอบ__ overhead สูง
+
 3. ปัญหาอะไรที่เกิดขึ้นเมื่อ time slice ยาวเกินไป?
+__ตอบ__ delay เยอะ, ไม่ real-time
+
 4. Context switching overhead คิดเป็นกี่เปอร์เซ็นต์ของเวลาทั้งหมด?
+__ตอบ__ น่าจะประมาณ 5–30% ของเวลาทั้งหมด ขึ้นอยู่กับขนาด time slice
+
 5. งานไหนที่ได้รับผลกระทบมากที่สุดจากการ time-sharing?
+__ตอบ__ งานที่หนัก
+
 
 ## ผลการทดลองที่คาดหวัง
 
@@ -304,3 +314,5 @@ void demonstrate_problems(void)
 2. **Time Slice Trade-offs** - ความสมดุลระหว่างการตอบสนองและประสิทธิภาพ
 3. **Fixed Schedule Limitations** - ข้อจำกัดของการใช้เวลาคงที่
 4. **Need for RTOS** - เหตุผลที่จำเป็นต้องมี Real-Time Operating System
+
+![alt text](image.png)
